@@ -1,4 +1,5 @@
 import { NegociacaoController } from "./controllers/negociacao.controller.js";
+import { NegociacoesView } from "./views/negociacoes-view.js";
 
 
 const controller = new NegociacaoController();
@@ -8,5 +9,6 @@ form.addEventListener('submit', event => {
     controller.adiciona();
 })
 
-
-
+const negociacoesView = new NegociacoesView;
+const template = negociacoesView.template();
+console.log(template);
