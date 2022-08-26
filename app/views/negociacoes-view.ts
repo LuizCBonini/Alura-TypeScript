@@ -21,7 +21,7 @@ export class NegociacoesView {
       `;
   }
 
-  update(): vois {
+  update(): void {
     this.elemento.innerHTML = this.template();
   }
 }
